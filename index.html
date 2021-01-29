@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>759Assignment1</title>
+	<style>
+		body  {
+			background-color: #edd1b2;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Banner*/
+
+.bannerImg
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('bannerImage.jpg');
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.bannerNav
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 33px;
+    padding-top: 13px;
+    padding-left: 4px;
+    background-color: black; 
+    color: white;
+    font-size: 0.8em;
+}
+
+.redNav
+{
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    background-color: red;
+    border: red;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.left {
+  float: left;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.imgOne {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.imgThree {
+   width: 150px;
+  height: 150px;
+  padding: 5px;
+}
+
+.iconMain{
+	background: none;
+  width: 100px;
+  height: 80px;
+}
+
+.links
+{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.links img {
+    border: 1px solid #333;
+    margin-right: 2px;
+    width: 40px;
+}
+
+
+.tweet, .my_pictures, .my_friends
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tweet
+{
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.myPictures
+{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.myPictures img
+{
+    border: 1px solid #333;
+    margin-right: 2px;
+    width: 70px;
+}
+
+.myFriends
+{
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.myFriends ul
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding-left: 2px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+    /********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 991px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+
+
+	</style>
+</head>
+
+
+<body>
+
+
+<img src="icon.png" alt="icon is here" style="width:104px; height:80px;">
+<div class="navbar ">
+  <a class="left">Travel Diary</a>
+  <a href="contactForm.html">CONTACT</a>
+  <a href="resumePage.html">RESUME</a>
+  <a href="#">BLOG</a>
+  <a href="#">HOME</a>
+</div>
+
+
+<div class="bannerImg">
+                <div class="bannerNav" style="font-family: papyrus; font-weight: bold;">
+                    Reflections on my holiday in the United States...
+                    <a href="#" class="redNav">See article </a>
+                </div>
+            </div>
+
+ <div class="row">
+
+ <div class="col-lg-9 col-md-9 col-sm-12" style="padding: 20px;">
+    <h2> <img src="iconmain.png" alt="me" class="iconMain">I'M A GREAT TRAVELLER</h2>
+   
+    <p>The development of consumer societies meant the erosion of traditional values and attitudes of thrift and prudence. Expanding consumption was necessary to create markets for the fruits of rising production. Ironically this "required the nurture of qualities like wastefulness, self-indulgence, and artificial obsolescence, which directly negated or undermined the values of efficiency"and the Protestant Ethic that had originally nurtured capitalism. 1 Advertisers sought to redefine people's needs, encourage their wants and offer solutions to them via goods produced by corporations rather than allowing people to identify and solve their own problems, or to look to each other for solutions.</p>
+    
+    <p>Consumerism also played a major role in legitimising a social system which rewards businessmen and top corporate executives with incomes many times those of ordinary workers. The consumer society gives ordinary workers some access to the good life. Surrounded by the bounty of their work-the television set, stereo, car, computer, white goods-they are less likely to question conditions of their work, the way it dominates their life, and the lack of power they have as workers. Advertisers constantly tell them these are the fruits of success, that this is what life is all about. To question a system that delivers such plenty would seem perverse.</p>
+
+     <p>The development of consumer societies meant the erosion of traditional values and attitudes of thrift and prudence. Expanding consumption was necessary to create markets for the fruits of rising production. Ironically this "required the nurture of qualities like wastefulness, self-indulgence, and artificial obsolescence, which directly negated or undermined the values of efficiency"and the Protestant Ethic that had originally nurtured capitalism. 1 Advertisers sought to redefine people's needs, encourage their wants and offer solutions to them via goods produced by corporations rather than allowing people to identify and solve their own problems, or to look to each other for solutions.</p>
+
+  </div>
+
+ <div class="col-lg-3 col-md-3 col-sm-12" style="color: white; background-color: grey; padding: 10px; margin-top: 20px;">
+    <h2>About the author</h2>
+<div class="imgOne" >
+    	<img src="icon.png" alt="icon is here" style="width:100%; height:100%;">
+    	</div>
+    	    <p style="padding: 5px;">A self-introduction explains who you are, what you do and what others need to know about you. You should provide a self-introduction any time you meet someone new and don't have a third party to introduce you. </p>
+    <p style="padding: 5px;"> Offer a self-introduction when you are: Beginning an interview. Attending a hiring event.</p>
+
+<div class="links">
+
+	<p><img src="yelp.jpg" alt="icon is here"><img src="fb.png" alt="icon is here"><img src="feed.png" alt="icon is here"><img src="ins.png" alt="icon is here"><img src="twitter.png" alt="icon is here"></p>
+</div></div>
+</div>
+
+<div class="row">
+	<div class="tweet col-lg-4 col-md-4 col-sm-12">
+                    <h1>My last tweet</h1>
+                    <p>wow!!!!</p>
+                    <p>01/28 10:13</p>
+                </div>
+
+ <div class="myPictures col-lg-4 col-md-4 col-sm-12">
+                    <h1>My pictures</h1>
+                    <p><img src="pic1.png" alt="Picture" /><img src="pic2.png" alt="Picture" /><img src="pic3.png" alt="Picture" /><img src="pic4.png" alt="Picture" /></p>
+                </div>
+
+ <div class="myFriends col-lg-4 col-md-4 col-sm-12">
+                    <h1>My friends</h1>
+                <ul>
+                        <li style="color:blue; font-family: Arial;">Romeo</li>
+                        <li style="color:blue; font-family: Arial;">David</li>
+                        <li style="color:blue; font-family: Arial;">Victoria</li>
+                        <li style="color:blue; font-family: Arial;">Cruz</li>
+              </ul>
+
+              <ul>
+                        <li style="color:blue; font-family: Arial;">Zhen</li>
+                        <li style="color:blue; font-family: Arial;">Ta</li>
+                        <li style="color:blue; font-family: Arial;">Ma</li>
+                        <li style="color:blue; font-family: Arial;">Nan</li>
+              </ul>
+                </div>
+
+</div>
+
+</body>
+</html>
